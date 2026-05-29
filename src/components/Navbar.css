@@ -1,0 +1,124 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  /* Professional dark solid/glass mix */
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: #FFF;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  /* Removed filter so original logo colors show properly */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #CBD5E1; /* Slate 300 */
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: #FFF;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Dropdown */
+.dropdown-parent {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: -10px;
+}
+
+.services-dropdown {
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  background: rgba(15, 23, 42, 0.95); /* Deep slate */
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  min-width: 320px;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  animation: dropdownFadeIn 0.2s ease-out;
+}
+
+@keyframes dropdownFadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.dropdown-item {
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s;
+  color: #E2E8F0 !important;
+}
+
+.dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #FFF !important;
+}
+
+.dropdown-icon {
+  color: var(--accent-cyan);
+  display: flex;
+  align-items: center;
+}
+
+.navbar-cta .btn-primary {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.mobile-menu-btn {
+  display: none;
+  color: #FFF;
+}
+
+@media (max-width: 992px) {
+  .navbar-links {
+    display: none;
+  }
+  .navbar-cta {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: block;
+  }
+}

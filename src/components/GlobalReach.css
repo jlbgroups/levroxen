@@ -1,0 +1,114 @@
+.global-reach {
+  background-color: var(--dark-bg);
+  color: #FFF;
+  position: relative;
+  overflow: hidden;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.global-reach-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.global-reach-badge {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.global-reach-title {
+  font-size: 56px;
+  margin-bottom: 24px;
+  color: #FFF;
+}
+
+.global-reach-desc {
+  font-size: 18px;
+  color: #94A3B8;
+  margin-bottom: 48px;
+  max-width: 90%;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  padding: 24px 16px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.stat-card h3 {
+  font-size: 32px;
+  color: #FFF;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  font-size: 14px;
+  color: #94A3B8;
+  margin: 0;
+}
+
+.global-reach-map {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.map-image {
+  width: 100%;
+  display: block;
+}
+
+.map-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px;
+  background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.overlay-text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #94A3B8;
+}
+
+.pulse-dot.blue {
+  background-color: var(--primary-color);
+  box-shadow: 0 0 0 0 rgba(0, 102, 255, 0.4);
+}
+
+@media (max-width: 992px) {
+  .global-reach-container {
+    grid-template-columns: 1fr;
+  }
+}

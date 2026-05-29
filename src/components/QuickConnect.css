@@ -1,0 +1,110 @@
+.quick-connect-wrapper {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+/* Floating Button */
+.quick-connect-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-cyan));
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 102, 255, 0.4);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+}
+
+.quick-connect-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 35px rgba(0, 102, 255, 0.5);
+}
+
+.quick-connect-btn.active {
+  background: #0F172A;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transform: rotate(90deg);
+}
+
+/* Pulse Animation */
+.qc-pulse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid var(--accent-cyan);
+  animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 1; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+/* Menu */
+.quick-connect-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px) scale(0.9);
+  transform-origin: bottom right;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.quick-connect-menu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.qc-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #FFF;
+  padding: 10px 20px 10px 10px;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 14px;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.qc-item:hover {
+  transform: translateX(-5px);
+  color: var(--primary-color);
+}
+
+.qc-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+}
+
+.qc-icon.mail { background: #EA4335; }
+.qc-icon.phone { background: #34A853; }
+
+@media (max-width: 768px) {
+  .quick-connect-wrapper {
+    bottom: 20px;
+    right: 20px;
+  }
+}

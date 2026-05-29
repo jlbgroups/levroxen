@@ -1,0 +1,40 @@
+.cta {
+  padding: 60px 0;
+  background-color: var(--bg-color);
+}
+
+.cta-container {
+  background-color: #FFF;
+  border-radius: var(--radius-lg);
+  padding: 40px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.cta-title {
+  font-size: 28px;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.cta-desc {
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+.cta-btn {
+  background-color: var(--text-primary);
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .cta-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+    padding: 32px 24px;
+  }
+}
