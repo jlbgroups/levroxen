@@ -70,7 +70,7 @@ const ContactPage = () => {
               { icon: <Mail size={22} color="#0066FF" />, label: 'Email', value: 'admin@levroxen.com', href: 'mailto:admin@levroxen.com' },
               { icon: <Phone size={22} color="#0066FF" />, label: 'Phone', value: '+91 83412 96994', href: 'tel:+918341296994' },
               { icon: <Phone size={22} color="#0066FF" />, label: 'Alternate Phone', value: '+91 86884 56559', href: 'tel:+918688456559' },
-              { icon: <MapPin size={22} color="#0066FF" />, label: 'Headquarters', value: 'USA', href: null },
+              { icon: <MapPin size={22} color="#0066FF" />, label: 'Headquarters', value: <>905 N Pershing Ave<br />Salem, MO 65560-1144<br />United States</>, href: null },
               { icon: <Clock size={22} color="#0066FF" />, label: 'Business Hours', value: 'Mon – Fri: 9:00 AM – 6:00 PM (IST)', href: null },
             ].map((item, i) => (
               <div key={i} style={{ display: 'flex', gap: '20px', alignItems: 'flex-start', padding: '24px', background: '#FFF', borderRadius: 'var(--radius-md)', border: '1px solid rgba(0,0,0,0.05)', boxShadow: '0 4px 6px rgba(0,0,0,0.02)' }}>
