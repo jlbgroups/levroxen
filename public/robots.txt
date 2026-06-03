@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /dashboard
+Disallow: /exam
+Disallow: /admin/
+Disallow: /test
+Disallow: /instructions
+Disallow: /result
+Disallow: /feedback
+Disallow: /interview-room/
+Disallow: /api/
+
+Allow: /
+Allow: /login
+Allow: /register
+Allow: /privacy-policy
+Allow: /terms-and-conditions
+
+Sitemap: https://www.levroxen.com/sitemap.xml
