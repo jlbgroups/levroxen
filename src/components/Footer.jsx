@@ -55,7 +55,6 @@ const Footer = () => {
             <div className="contact-item">
               <Phone size={16} color="#0066FF" />
               <div>
-                <a href="tel:+918341296994">+91 83412 96994</a>
                 <a href="tel:+918688456559">+91 86884 56559</a>
                 <a href="tel:+918333837492">+91 8333837492</a>
               </div>
