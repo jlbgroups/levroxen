@@ -61,7 +61,7 @@ const IndustriesPage = () => {
       <div className="container industries-header">
         <span className="ind-badge text-gradient">INDUSTRIES</span>
         <h1 className="ind-title">Industries We Serve</h1>
-        <p className="ind-subtitle">From sales and retail to fintech and manufacturing — Levroxen Software Innovations delivers tailored IT solutions across the sectors that matter most.</p>
+        <p className="ind-subtitle">From sales and retail to fintech and manufacturing — Levroxen LLC delivers tailored IT solutions across the sectors that matter most.</p>
       </div>
 
       {/* Industry Sections */}

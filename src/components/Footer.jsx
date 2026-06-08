@@ -13,7 +13,7 @@ const Footer = () => {
               <img src="/logo.png" alt="Levroxen Logo" className="logo-image" style={{ height: '75px', objectFit: 'contain', marginBottom: '16px' }} />
             </div>
             <p className="footer-desc">
-              Levroxen Software Innovations specializes in IT Consulting & Staffing, Software Development, and Managed Services across the USA.
+              Levroxen LLC provides IT consulting, software development, and managed services across the USA.
             </p>
             <div className="social-links">
               <a href="#" className="social-icon">
@@ -57,6 +57,7 @@ const Footer = () => {
               <div>
                 <a href="tel:+918341296994">+91 83412 96994</a>
                 <a href="tel:+918688456559">+91 86884 56559</a>
+                <a href="tel:+918333837492">+91 8333837492</a>
               </div>
             </div>
           </div>

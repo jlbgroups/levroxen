@@ -13,7 +13,7 @@ const Hero = () => {
             Where Technology Meets Global Talent for <span className="text-gradient">Limitless Growth.</span>
           </h1>
           <p className="hero-description">
-            Levroxen Software Innovations specializes in IT Staffing & Consulting, Custom Software Development, and Managed Services across USA.
+            Levroxen LLC specializes in IT Staffing & Consulting, Custom Software Development, and Managed Services across USA.
           </p>
           
           <div className="hero-buttons">

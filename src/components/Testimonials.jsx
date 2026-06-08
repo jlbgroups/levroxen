@@ -4,7 +4,7 @@ import './Testimonials.css';
 
 const testimonials = [
   {
-    text: "Levroxen Software Innovations completely transformed our IT infrastructure. Their team's expertise in cloud migration saved us both time and money. Highly recommended!",
+    text: "Levroxen LLC completely transformed our IT infrastructure. Their team's expertise in cloud migration saved us both time and money. Highly recommended!",
     author: "Sarah Jenkins",
     role: "CTO, TechFlow Solutions",
     avatar: "S"
@@ -30,7 +30,7 @@ const Testimonials = () => {
         <div className="testi-header">
           <span className="text-gradient testi-badge">SUCCESS STORIES</span>
           <h2 className="testi-title">Trusted by Industry Leaders</h2>
-          <p className="testi-desc">Don't just take our word for it. Here is what our clients have to say about partnering with Levroxen Software Innovations.</p>
+          <p className="testi-desc">Don't just take our word for it. Here is what our clients have to say about partnering with Levroxen LLC.</p>
         </div>
 
         <div className="testi-grid">

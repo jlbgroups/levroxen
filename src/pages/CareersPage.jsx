@@ -148,7 +148,7 @@ const CareersPage = () => {
           <span className="careers-badge">STUDENT OPPORTUNITIES</span>
           <h1 className="careers-title">Predict the Future by Creating It.</h1>
           <p className="careers-desc">
-            Explore exciting Student opportunities at Levroxen Software Innovations. We offer structured internships and live projects with a modern approach to technology and professional growth in roles like Gen AI, SAP, App Development, and Salesforce Development.
+            Explore exciting Student opportunities at Levroxen LLC. We offer structured internships and live projects with a modern approach to technology and professional growth in roles like Gen AI, SAP, App Development, and Salesforce Development.
           </p>
           <p className="careers-highlights">
             Duration: 3 Months • Stipend: 10K-12K • PPO: 6 LPA • Work From Home
@@ -217,7 +217,7 @@ const CareersPage = () => {
       <section className="mission-section container">
         <div className="section-header center">
           <span className="section-badge">OUR MISSION</span>
-          <h2>Levroxen Software Innovations Aims To</h2>
+          <h2>Levroxen LLC Aims To</h2>
           <p>We are committed to nurturing the next generation of technology leaders through structured learning and real-world project exposure.</p>
         </div>
         
@@ -289,14 +289,14 @@ const CareersPage = () => {
           </div>
           <div className="scam-content">
             <h4>Recruitment Scam Alert</h4>
-            <p>At Levroxen Software Innovations, integrity and transparency are at the heart of our recruitment process. We want to alert all job seekers that we <strong>never charge any fees</strong>, request payment, or ask for financial information at any stage of our hiring process.</p>
+            <p>At Levroxen LLC, integrity and transparency are at the heart of our recruitment process. We want to alert all job seekers that we <strong>never charge any fees</strong>, request payment, or ask for financial information at any stage of our hiring process.</p>
           </div>
         </div>
 
         {/* CTA Banner */}
         <div className="careers-cta">
           <div className="careers-cta-content">
-            <h3>Levroxen Software Innovations — Get the Future You Want!</h3>
+            <h3>Levroxen LLC — Get the Future You Want!</h3>
             <p>Send your resume to <a href="mailto:admin@levroxen.com">admin@levroxen.com</a></p>
           </div>
           <Link to="/apply" className="btn-primary">

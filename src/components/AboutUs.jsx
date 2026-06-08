@@ -11,7 +11,7 @@ const AboutUs = () => {
           <span className="about-badge text-gradient">ABOUT US</span>
           <h2 className="about-title">About Levroxen</h2>
           <p className="about-desc">
-            Levroxen Software Innovations is a premier IT Staffing and Consulting firm dedicated to bridging the talent gap in the digital economy. With expertise spanning IT Staffing, Software Development, and Managed Services, we empower businesses with top-tier technology talent and innovative digital solutions.
+            Levroxen LLC is a premier IT Staffing and Consulting firm dedicated to bridging the talent gap in the digital economy. With expertise spanning IT Staffing, Software Development, and Managed Services, we empower businesses with top-tier technology talent and innovative digital solutions.
           </p>
           <p className="about-desc">
             Operating across the <strong>USA</strong>, we help scaling organizations build high-performing teams and deliver robust software products.

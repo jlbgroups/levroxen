@@ -26,7 +26,15 @@
 }
 
 .logo-image {
-  /* Removed filter so original logo colors show properly */
+  height: 65px;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 576px) {
+  .logo-image {
+    height: 80px;
+  }
 }
 
 .navbar-links {
