@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Globe, Mail, Phone } from 'lucide-react';
+import { Globe, Mail, Phone, MapPin } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -55,8 +55,15 @@ const Footer = () => {
             <div className="contact-item">
               <Phone size={16} color="#0066FF" />
               <div>
-                <a href="tel:+918688456559">+91 86884 56559</a>
-                <a href="tel:+918333837492">+91 8333837492</a>
+                <a href="tel:+919703296994">+91 9703296994</a>
+              </div>
+            </div>
+            <div className="contact-item" style={{ alignItems: 'flex-start', marginTop: '12px' }}>
+              <MapPin size={16} color="#0066FF" style={{ marginTop: '4px', flexShrink: 0 }} />
+              <div>
+                905 N Pershing Ave<br />
+                Salem, MO 65560-1144<br />
+                United States
               </div>
             </div>
           </div>

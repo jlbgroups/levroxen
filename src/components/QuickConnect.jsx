@@ -13,7 +13,7 @@ const QuickConnect = () => {
           <div className="qc-icon mail"><Mail size={18} /></div>
           <span>Email Us</span>
         </a>
-        <a href="tel:+918341296994" className="qc-item">
+        <a href="tel:+919703296994" className="qc-item">
           <div className="qc-icon phone"><Phone size={18} /></div>
           <span>Call Support</span>
         </a>
