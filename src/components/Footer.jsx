@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Globe, Mail, Phone, MapPin } from 'lucide-react';
+import { FaLinkedin } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -18,6 +19,9 @@ const Footer = () => {
             <div className="social-links">
               <a href="#" className="social-icon">
                 <Globe size={20} />
+              </a>
+              <a href="https://www.linkedin.com/company/levroxenllc/" className="social-icon" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin size={20} />
               </a>
             </div>
           </div>
