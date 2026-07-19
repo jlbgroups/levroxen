@@ -259,7 +259,6 @@ const ContactPage = () => {
 
             {[
               { icon: <Mail size={22} color="#0066FF" />, label: 'Email', value: 'admin@levroxen.com', href: 'mailto:admin@levroxen.com' },
-              { icon: <Phone size={22} color="#0066FF" />, label: 'Phone', value: '+91 9703296994', href: 'tel:+919703296994' },
               { icon: <MapPin size={22} color="#0066FF" />, label: 'Headquarters', value: <>905 N Pershing Ave<br />Salem, MO 65560-1144<br />United States</>, href: null },
               { icon: <Clock size={22} color="#0066FF" />, label: 'Business Hours', value: 'Mon – Fri: 2:00 PM – 10:00 PM (IST)', href: null },
             ].map((item, i) => (

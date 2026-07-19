@@ -56,12 +56,7 @@ const Footer = () => {
               <Mail size={16} color="#0066FF" />
               <a href="mailto:admin@levroxen.com">admin@levroxen.com</a>
             </div>
-            <div className="contact-item">
-              <Phone size={16} color="#0066FF" />
-              <div>
-                <a href="tel:+919703296994">+91 9703296994</a>
-              </div>
-            </div>
+
             <div className="contact-item" style={{ alignItems: 'flex-start', marginTop: '12px' }}>
               <MapPin size={16} color="#0066FF" style={{ marginTop: '4px', flexShrink: 0 }} />
               <div>
