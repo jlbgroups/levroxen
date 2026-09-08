@@ -1,32 +1,87 @@
 import React, { useState } from 'react';
-import { MessageSquare, X, Mail, Phone } from 'lucide-react';
+import {
+    MessageSquare,
+    X,
+    Phone,
+    Mail,
+} from 'lucide-react';
+
 import './QuickConnect.css';
 
 const QuickConnect = () => {
-  const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
-  return (
-    <div className="quick-connect-wrapper">
-      {/* Expanded Menu */}
-      <div className={`quick-connect-menu ${isOpen ? 'open' : ''}`}>
-        <a href="mailto:admin@levroxen.com" className="qc-item">
-          <div className="qc-icon mail"><Mail size={18} /></div>
-          <span>Email Us</span>
-        </a>
+    const toggleQuickConnect = () => {
+        setIsOpen((prev) => !prev);
+    };
 
-      </div>
+    return ( <
+        div className = "quick-connect-wrapper" >
 
-      {/* Main Floating Button */}
-      <button 
-        className={`quick-connect-btn ${isOpen ? 'active' : ''}`} 
-        onClick={() => setIsOpen(!isOpen)}
-        aria-label="Quick Connect"
-      >
-        {isOpen ? <X size={24} /> : <MessageSquare size={24} />}
-        {!isOpen && <span className="qc-pulse"></span>}
-      </button>
-    </div>
-  );
+        { /* Expanded Menu */ } <
+        div className = { `quick-connect-menu ${
+          isOpen ? 'open' : ''
+        }` } >
+
+        { /* Phone Option */ } <
+        a href = "tel:+919703296994"
+        className = "qc-item" >
+        <
+        div className = "qc-icon phone" >
+        <
+        Phone size = { 18 }
+        /> < /
+        div >
+
+        <
+        span >
+        +91 9703296994 <
+        /span> < /
+        a >
+
+        { /* Email Option */ } <
+        a href = "mailto:hiring@levroxen.com"
+        className = "qc-item" >
+        <
+        div className = "qc-icon mail" >
+        <
+        Mail size = { 18 }
+        /> < /
+        div >
+
+        <
+        span > { 'admin@levroxen.com' } <
+        /span> < /
+        a >
+
+        <
+        /div>
+
+        { /* Main Floating Button */ } <
+        button type = "button"
+        className = { `quick-connect-btn ${
+          isOpen ? 'active' : ''
+        }` }
+        onClick = { toggleQuickConnect } > {
+            isOpen ? ( <
+                X size = { 24 }
+                />
+            ) : ( <
+                MessageSquare size = { 24 }
+                />
+            )
+        }
+
+        {
+            !isOpen && ( <
+                span className = "qc-pulse" > < /span>
+            )
+        } <
+        /button>
+
+        <
+        /div>
+    );
 };
 
 export default QuickConnect;
